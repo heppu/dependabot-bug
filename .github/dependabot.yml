@@ -1,0 +1,15 @@
+version: 2
+updates:
+  - package-ecosystem: "docker"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+      time: "12:00"
+      timezone: "Europe/Helsinki"
+    cooldown:
+      default-days: 1
+    groups:
+      all:
+        patterns:
+          - "*"
